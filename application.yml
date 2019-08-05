@@ -1,1 +1,14 @@
-﻿
+﻿spring: 
+  profiles:
+    active:
+    - dev
+---
+spring:
+  profiles: dev
+  application:
+    name: microservice-config-lhsm-dev
+---
+spring:
+  profiles: test
+  application:
+    name: microservice-config-lhsm-test
